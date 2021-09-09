@@ -20,7 +20,7 @@ namespace WebApplication_GameStoreIL.Models
         public string Username { get; set; }
 
         [Required]
-        [RegularExpression("^.{6,}$", ErrorMessage = "Password must contains minimum 6 digits or letters")]
+        [RegularExpression("^.{6,12}$", ErrorMessage = "Password must contains minimum 6 digits or letters")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
@@ -30,7 +30,7 @@ namespace WebApplication_GameStoreIL.Models
 
         [Required]
         [Display(Name = "Phone")]
-        [RegularExpression("^.{10,10}$", ErrorMessage = "Phone number must contains exactly 10 digits")]
+        [RegularExpression(@"^!*(\d!*){10,10}$", ErrorMessage = "Phone number must contains exactly 10 digits")]
         [DataType(DataType.PhoneNumber)]
         public int PhoneNumber { get; set; }
 
