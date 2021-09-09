@@ -20,7 +20,7 @@ namespace WebApplication_GameStoreIL.Models
         public string Username { get; set; }
 
         [Required]
-        [RegularExpression("^.{6,12}$", ErrorMessage = "Password must contains minimum 6 digits or letters")]
+        [RegularExpression("^.{6,12}$", ErrorMessage = "Password must contains minimum 6 digits or letters and maximum 12")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
