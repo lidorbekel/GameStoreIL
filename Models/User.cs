@@ -20,6 +20,7 @@ namespace WebApplication_GameStoreIL.Models
         public string Username { get; set; }
 
         [Required]
+        [RegularExpression("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$", ErrorMessage = "Use 6 or more characters with a mix of letters, numbers & symbols")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
