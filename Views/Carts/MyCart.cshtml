@@ -40,7 +40,7 @@
                                 <td>YoungGames</td>
                                 break;
                         }
-                        <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                    <td>₪@Html.DisplayFor(modelItem => item.Price)</td>
                         <td>
                             <form asp-controller="Carts" asp-action="RemoveProductFromCart" asp-route-id="@item.Id" method="post">
                                 <button class="btn btn-danger" type="submit">Remove</button>
@@ -58,7 +58,7 @@
                         @Html.DisplayNameFor(model => model.TotalPrice)
                     </th>
                     <th>
-                        @Html.DisplayFor(model => model.TotalPrice)
+                        ₪ @Html.DisplayFor(model => model.TotalPrice)
                     </th>
                     <th>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#payModel">

@@ -17,7 +17,6 @@ namespace WebApplication_GameStoreIL.Models
 
         [Required]
         [Range(0, 500)]
-        [DataType(DataType.Currency)]
         public double Price { get; set; }
 
         [Required]

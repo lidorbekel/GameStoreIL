@@ -15,7 +15,6 @@ namespace WebApplication_GameStoreIL.Models
         public User User { get; set; }
 
         [Required]
-        [DataType(DataType.Currency)]
         public double TotalPrice { get; set; } = 0;
 
         //many <-> many : Cart <-> Product 
