@@ -3,7 +3,6 @@ using Microsoft.Extensions.Hosting;
 
 namespace WebApplication_GameStoreIL
 {
-    // Web Application GameStoreIL
     public class Program
     {
         public static void Main(string[] args)
