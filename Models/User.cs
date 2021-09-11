@@ -30,7 +30,6 @@ namespace WebApplication_GameStoreIL.Models
 
         [Required]
         [Display(Name = "Phone")]
-        [RegularExpression(@"^!*(\d!*){10,10}$", ErrorMessage = "Phone number must contains exactly 10 digits")]
         [DataType(DataType.PhoneNumber)]
         public int PhoneNumber { get; set; }
 
