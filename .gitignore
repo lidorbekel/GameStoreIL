@@ -7,13 +7,14 @@
 artifacts/
 bin/
 obj/
-wwwroot/Photos/vid1.mp4/
+wwwroot/Photos/vid.mp4/
 .dotnet/
 .nuget/
 .packages/
 .tools/
 .vs/
 .vscode/
+www
 node_modules/
 BenchmarkDotNet.Artifacts/
 .gradle/
