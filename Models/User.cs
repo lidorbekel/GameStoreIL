@@ -31,6 +31,7 @@ namespace WebApplication_GameStoreIL.Models
         [Required]
         [Display(Name = "Phone")]
         [DataType(DataType.PhoneNumber)]
+        [RegularExpression("^.{9,11}$", ErrorMessage = "The value is not valid for Phone.")]
         public int PhoneNumber { get; set; }
 
         public UserType Type { get; set; } = UserType.Client;
